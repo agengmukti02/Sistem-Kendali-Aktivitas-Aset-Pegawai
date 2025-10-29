@@ -1,0 +1,110 @@
+/* ============================================
+   Filament Sidebar Dark Theme
+   ============================================ */
+
+/* Main Sidebar Container */
+.fi-sidebar,
+.fi-sidebar-nav,
+aside[class*="fi-sidebar"] {
+    background-color: #1a1a1a !important;
+    border-right-color: #2a2a2a !important;
+}
+
+/* Sidebar Header (Brand Area) */
+.fi-sidebar-header {
+    background-color: #1a1a1a !important;
+    border-bottom-color: #2a2a2a !important;
+}
+
+/* Navigation Items - Text */
+.fi-sidebar-item-button,
+.fi-sidebar-item-label {
+    color: #d1d5db !important;
+}
+
+/* Navigation Group Labels */
+.fi-sidebar-group-label {
+    color: #9ca3af !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    font-size: 0.75rem !important;
+}
+
+/* Navigation Items - Hover State */
+.fi-sidebar-item:hover .fi-sidebar-item-button,
+.fi-sidebar-item-button:hover {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+/* Navigation Items - Active State */
+.fi-sidebar-item-active .fi-sidebar-item-button,
+.fi-sidebar-item-button[aria-current="page"] {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+}
+
+/* Navigation Icons */
+.fi-sidebar-item-icon,
+.fi-sidebar-group-icon {
+    color: #9ca3af !important;
+}
+
+.fi-sidebar-item:hover .fi-sidebar-item-icon,
+.fi-sidebar-item-active .fi-sidebar-item-icon {
+    color: #ffffff !important;
+}
+
+/* Dividers & Borders */
+.fi-sidebar hr,
+.fi-sidebar-group+.fi-sidebar-group {
+    border-color: #2a2a2a !important;
+}
+
+/* Custom Scrollbar */
+.fi-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.fi-sidebar::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.fi-sidebar::-webkit-scrollbar-thumb {
+    background: #3a3a3a;
+    border-radius: 4px;
+}
+
+.fi-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #4a4a4a;
+}
+
+/* Badge/Notification */
+.fi-sidebar-item-badge {
+    background-color: #3b82f6 !important;
+    color: #ffffff !important;
+}
+
+/* Collapsible Groups */
+.fi-sidebar-group-button {
+    color: #d1d5db !important;
+}
+
+.fi-sidebar-group-button:hover {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+/* User Menu (if exists) */
+.fi-sidebar-user-menu {
+    background-color: #1a1a1a !important;
+    border-top-color: #2a2a2a !important;
+}
+
+.fi-sidebar-user-menu-button {
+    color: #d1d5db !important;
+}
+
+.fi-sidebar-user-menu-button:hover {
+    background-color: #2a2a2a !important;
+}

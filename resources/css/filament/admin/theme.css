@@ -1,0 +1,92 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+.fi-main,
+.fi-layout {
+    @apply bg-slate-50 dark:bg-slate-900;
+}
+
+/* ========== SIDEBAR DARK THEME ========== */
+.fi-sidebar {
+    background-color: rgb(17 24 39) !important;
+}
+
+/* Semua teks di sidebar default putih */
+.fi-sidebar,
+.fi-sidebar * {
+    color: white !important;
+}
+
+/* ========== TAB TIDAK AKTIF ========== */
+.fi-sidebar-item {
+    background-color: rgb(17 24 39) !important;
+    color: white !important;
+}
+
+.fi-sidebar-item a,
+.fi-sidebar-item button {
+    color: white !important;
+    background-color: transparent !important;
+}
+
+/* Icon tab tidak aktif */
+.fi-sidebar-item .fi-sidebar-item-icon {
+    color: rgb(209 213 219) !important;
+}
+
+/* Hover state */
+.fi-sidebar-item:hover {
+    background-color: rgb(31 41 55) !important;
+    color: white !important;
+}
+
+.fi-sidebar-item:hover .fi-sidebar-item-icon {
+    color: white !important;
+}
+
+/* ========== TAB AKTIF ========== */
+.fi-sidebar-item-active,
+.fi-sidebar-item.fi-active,
+.fi-sidebar-item[aria-current="page"] {
+    background-color: white !important;
+    color: rgb(17 24 39) !important;
+    border-radius: 0.5rem !important;
+}
+
+/* Teks dan icon pada tab aktif */
+.fi-sidebar-item-active *,
+.fi-sidebar-item.fi-active *,
+.fi-sidebar-item[aria-current="page"] * {
+    color: rgb(17 24 39) !important;
+}
+
+.fi-sidebar-item-active a,
+.fi-sidebar-item-active button,
+.fi-sidebar-item.fi-active a,
+.fi-sidebar-item.fi-active button,
+.fi-sidebar-item[aria-current="page"] a,
+.fi-sidebar-item[aria-current="page"] button {
+    color: rgb(17 24 39) !important;
+    background-color: white !important;
+    border-radius: 0.5rem !important;
+}
+
+/* Icon pada tab aktif */
+.fi-sidebar-item-active .fi-sidebar-item-icon,
+.fi-sidebar-item.fi-active .fi-sidebar-item-icon,
+.fi-sidebar-item[aria-current="page"] .fi-sidebar-item-icon {
+    color: rgb(17 24 39) !important;
+}
+
+/* Group label */
+.fi-sidebar-group-label {
+    color: rgb(156 163 175) !important;
+}
+
+/* Header sidebar */
+.fi-sidebar-header {
+    background-color: rgb(17 24 39) !important;
+    border-color: rgb(55 65 81) !important;
+}
