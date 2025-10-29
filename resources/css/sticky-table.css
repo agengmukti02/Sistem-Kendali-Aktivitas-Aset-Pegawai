@@ -1,0 +1,80 @@
+/* Sticky columns for attendance tables */
+.fi-ta-table {
+    overflow-x: auto !important;
+    position: relative !important;
+}
+
+.fi-ta-table table {
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    position: relative !important;
+}
+
+/* Sticky columns styling - Force sticky position */
+.sticky,
+th.sticky,
+td.sticky {
+    position: sticky !important;
+    background-color: white !important;
+    box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.1) !important;
+    z-index: 10 !important;
+}
+
+/* Header sticky should be on top */
+th.sticky {
+    z-index: 20 !important;
+}
+
+/* Specific sticky positions */
+.left-0 {
+    left: 0 !important;
+}
+
+.left-\[50px\] {
+    left: 50px !important;
+}
+
+.left-\[170px\] {
+    left: 170px !important;
+}
+
+/* Dark mode support */
+.dark .sticky,
+.dark th.sticky,
+.dark td.sticky {
+    background-color: rgb(17 24 39) !important;
+}
+
+/* Striped rows support for sticky columns */
+.fi-ta-row-striped .sticky,
+.fi-ta-row-striped td.sticky {
+    background-color: rgb(249 250 251) !important;
+}
+
+.dark .fi-ta-row-striped .sticky,
+.dark .fi-ta-row-striped td.sticky {
+    background-color: rgb(31 41 55) !important;
+}
+
+/* Header always white/dark background */
+th.sticky {
+    background-color: white !important;
+}
+
+.dark th.sticky {
+    background-color: rgb(17 24 39) !important;
+}
+
+/* Remove shadow from last sticky column */
+.sticky.left-\[170px\],
+td.sticky.left-\[170px\],
+th.sticky.left-\[170px\] {
+    box-shadow: none !important;
+    border-right: 2px solid rgb(229 231 235) !important;
+}
+
+.dark .sticky.left-\[170px\],
+.dark td.sticky.left-\[170px\],
+.dark th.sticky.left-\[170px\] {
+    border-right: 2px solid rgb(55 65 81) !important;
+}
